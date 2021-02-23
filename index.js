@@ -28,12 +28,16 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+  Counter 1 the count variable was declared inside the functional scope.
+  Counter 2 the count variable was declared outside of the functional scope.
   
   2. Which of the two uses a closure? How can you tell?
+  Counter 1 is using a closure because it has a function nested within a function.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+     Counter 1 would be preferable for .
+     Counter 2 would be better for reusability. Whatever value you assign to the variable the function would calculate.
 */
 
 // counter1 code
@@ -100,7 +104,9 @@ Use the getInningScore() function below to do the following:
   2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 let object = {};
 function getInningScore(inningsCB) {
-  return `${object.push(inning)}`, `${object.push(inning)}`;
+
+
+  
 }
 
 
